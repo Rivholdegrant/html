@@ -3,7 +3,7 @@
 </head>
 
 <body>
-<form action="send.php" method="POST" style="display: block; width: 250px; margin: 0 auto; text-align: center;">
+<form id="form1" action="send.php" method="POST" style="display: block; width: 250px; margin: 0 auto; text-align: center;">
 
 <!--
 <label for="url" style="width: 250px; margin: 0 auto" >URL</label><br>
@@ -22,8 +22,7 @@
 <textarea readonly rows="5" cols="60" name="rsslist" style="width: 250px; margin-bottom: 15px;resize: none;"></textarea><br>
 
 <input type="submit" style="width: 120px; float:left" value="SAVE">
-<button type="button" style="width: 120px; float:right">SEND</button>
-
+<button form="form1" type="button" style="width: 120px; float:right">SEND</button>
 <!-- 
 <button type="button" style="width: 120px; float:left">SAVE</button>
 <input type="submit" style="width: 120px; float:right" value="SEND">
@@ -31,7 +30,9 @@
 
 </form>
 
+
 </body>
+
 
 <!--
 Save ma zapisywac podany rss do danego identyfikatora (email) w bazie
